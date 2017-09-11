@@ -39,9 +39,9 @@ function getCountryNamesByCountryCodes (codes) {
 function getUseEnglishCountryNames () {
 }
 
-// 実行と出力をする
+// 各関数の実行と出力をする
 console.log (countCountry ());
 let codes = findCountryCodeFromLanguage ('Japanese');
 console.log (codes);
-consolo.log (getCountryNamesByCountryCodes (codes));
+console.log (getCountryNamesByCountryCodes (codes));
 console.log (getUseEnglishCountryNames ());
