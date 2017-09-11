@@ -15,6 +15,7 @@ const DB_PASSWD = '';
 
 // country テーブルに登録されているレコード数を返す
 function countCountry () {
+  // 整数値のみを返せば良い
 }
 
 // countrylanguage テーブルから引数で指定された言語を使用しているレコードの CountryCode を返す
@@ -33,6 +34,8 @@ function findCountryCodeFromLanguage (lang) {
 
 // CountryCode(国コード)の配列から国名の配列を取得して返す
 function getCountryNamesByCountryCodes (codes) {
+  // 'JPN' という CountryCode は 'Japan' という国名に対応するので
+  // ['JPN'] のみが与えられたら ['Japan'] が返されれば良い
 }
 
 // 英語を使っている国名の配列を返す
@@ -40,6 +43,7 @@ function getUseEnglishCountryNames () {
 }
 
 // 各関数の実行と出力をする
+// (以下は得に変更する必要はない)
 console.log (countCountry ());
 let codes = findCountryCodeFromLanguage ('Japanese');
 console.log (codes);
